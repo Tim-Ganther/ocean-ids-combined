@@ -98,9 +98,9 @@ def create_offer():
     pool_address = pool.address
     print(f"pool_address = '{pool_address}'")
 
-    return did
+    return pool_address, did
 
-def buy_data(did):
+def buy_data(pool_address, did):
     #point to services
     asset = ocean.assets.resolve(did)
     service1 = asset.get_service(ServiceTypes.ASSET_ACCESS)
