@@ -311,7 +311,6 @@ def consumer_main():
 
 
     resource_uuid = response.text[10:46]
-    print(provider_user_data)
     print(resource_uuid)
     resource_data = response.text[57:]
 
